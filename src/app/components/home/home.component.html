@@ -1,5 +1,6 @@
 <ul>
     <li *ngFor="let user of users">
+        <img [src]="user.avatar" alt="User">
         <h1>{{user.first_name}} {{user.last_name}}</h1>
     </li>
 </ul>
