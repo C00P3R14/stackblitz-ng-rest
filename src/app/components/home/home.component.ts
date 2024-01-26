@@ -9,11 +9,12 @@ import { ReqresService } from '../../services/reqres.service';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  users:User[] = []
   constructor(private reqresService: ReqresService) {this.getUsers()}
   getUsers() {
     this.reqresService.getUsers().subscribe(
       (res: User[]) => {
-        console.log(res)
+        this.users = res
       },
       (err) => {
         console.error(err)
