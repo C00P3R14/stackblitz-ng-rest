@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app.routes';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './app.routes';
   imports: [
     CommonModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })
