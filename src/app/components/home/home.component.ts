@@ -11,6 +11,9 @@ import { ReqresService } from '../../services/reqres.service';
 export class HomeComponent {
   users:User[] = []
   constructor(private reqresService: ReqresService) {this.getUsers()}
+  userDetails(id:number) {
+    console.log('User ID: ',id)
+  }
   getUsers() {
     this.reqresService.getUsers().subscribe(
       (res: User[]) => {
