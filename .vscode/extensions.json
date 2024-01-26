@@ -3,6 +3,7 @@
   "recommendations": [
     "angular.ng-template",
     "cyrilletuzi.angular-schematics",
-    "johnpapa.angular2"
+    "johnpapa.angular2",
+    "mikael.angular-beastcode"
   ]
 }
