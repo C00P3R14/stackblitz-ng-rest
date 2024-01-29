@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { User } from '../../user';
 import { ReqresService } from '../../services/reqres.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,9 +11,13 @@ import { ReqresService } from '../../services/reqres.service';
 })
 export class HomeComponent {
   users:User[] = []
-  constructor(private reqresService: ReqresService) {this.getUsers()}
+  constructor(
+    private reqresService: ReqresService,
+    private router:Router
+    )
+   {this.getUsers()}
   userDetails(id:number) {
-    console.log('User ID: ',id)
+    this.router.navigate(['user',id])
   }
   getUsers() {
     this.reqresService.getUsers().subscribe(
