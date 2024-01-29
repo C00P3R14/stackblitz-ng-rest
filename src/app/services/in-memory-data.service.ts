@@ -11,8 +11,8 @@ export class InMemoryDataService implements InMemoryDbService {
 
   createDb() {
     const users:User[] = [
-      {id: 11, first_name:'Linda',last_name:'Ngubane',avatar:'https://i.ibb.co/pL27cCW/images.jpg'},
-      {id:12, first_name:'Sinazo',last_name:'Ngubane',avatar:'https://i.ibb.co/pL27cCW/images.jpg'}
+      {id: 11, first_name:'Linda',last_name:'Ngubane',avatar:'https://ibb.co/9rt8jBK'},
+      {id:12, first_name:'Sinazo',last_name:'Ngubane',avatar:'https://ibb.co/9rt8jBK'}
     ]
 
     return {users}
