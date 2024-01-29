@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
+import { UserDetailComponent } from './components/user/user-detail.component';
 
 
 
@@ -20,7 +21,8 @@ import { InMemoryDataService } from './services/in-memory-data.service';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    UserDetailComponent
   ],
   imports: [
     CommonModule,
